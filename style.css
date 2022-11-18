@@ -1,0 +1,41 @@
+
+      #calculator {
+      background-color:lightgrey;
+      margin: 100px auto;
+      padding: 30px;
+      border-radius:25px;
+
+      display:grid;
+      max-width: 500px;
+      min-height: 80vh;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+
+      grid-template-areas:
+      "display display display display"
+       "clear clear divide multiply"
+      "one two three add"
+      "four five six subtract"
+       "seven eight nine equals"
+       "zero zero decimal equals"
+       ;}
+
+        button{
+          font-size:1.5rem;
+          color:red;
+          margin:2px;
+          background-color: #102b6a;
+          border: 2px solid black;
+          border-radius: 25px;
+
+        }
+
+        #display{
+          min-height: 15vh;
+          background-color:#f6f5ec;
+          margin:2px;
+          font-size:4rem;
+          text-align:right;
+          color: black;
+          border-radius:10px;
+        }
